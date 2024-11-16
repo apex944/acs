@@ -1,0 +1,923 @@
+A:link {
+	FONT-SIZE: 10px; COLOR: #00279f; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A:visited {
+	FONT-SIZE: 10px; COLOR: #00279f; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A:hover {
+	FONT-SIZE: 10px; COLOR: #660066; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.producttile {
+	BACKGROUND-IMAGE: url(../images/bg_tile.gif); BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: #ffffff; left-margin: 0px; top-margin: 0px
+}
+.LeftNavCat {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #990000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #f9f8d1
+}
+.Sub2Title {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #f9f8d1; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #93adc8
+}
+.AreaDesc {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.ProductTable {
+	FONT-SIZE: 10px; COLOR: #333333; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.NotApp {
+	FONT-SIZE: 10px; COLOR: #999999; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.ProdBorder {
+	BACKGROUND-COLOR: #666666
+}
+.rednote {
+	FONT-SIZE: 10px; COLOR: #990000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.MSRP {
+	FONT-SIZE: 10px; COLOR: #990000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #93adc8
+}
+.TemplateCDesc {
+	FONT-SIZE: 10px; COLOR: #000000; LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Helvetica, Arial, sans-serif
+}
+.TemplateCDetails {
+	FONT-SIZE: 10px; COLOR: #666666; FONT-FAMILY: Verdana, Helvetica, Arial, sans-serif
+}
+.tempC_bgline {
+	BACKGROUND-IMAGE: url(../images/tempC_bgtile.gif); BACKGROUND-REPEAT: repeat-x; left-margin: 0px; top-margin: 0px
+}
+
+.navi-top {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 11px;
+color:#ffffff;
+font-weight: bold;
+}
+
+
+/* DOCUMENT */
+BODY {
+  background-color: #FFFFFF;
+  margin: 0px;
+}
+
+SELECT, INPUT, TEXTAREA {products
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: #000000;
+}
+
+FORM {
+  margin: 0px;
+  padding: 0px;
+}
+
+P, TD, BODY {
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 11px;
+   color: #4F4F4F;
+}
+
+h1 {
+   font-size: 17px;
+   font-weight: bold;
+   font-family: Arial, Helvetica, sans-serif;
+   padding: 0px;
+   margin: 0px;
+   color: #512A4C;
+}
+
+h2 {
+   font-size: 17px;
+   font-weight: normal;
+   font-family: Arial, Helvetica, sans-serif;
+   padding: 0px;
+   margin: 0px;
+   color: #512A4C;
+}
+
+h3 {
+   font-size: 11px;
+   font-weight: normal;
+   font-family: Arial, Helvetica, sans-serif;
+   padding: 0px;
+   margin: 0px;
+}
+
+.QtyBox {
+  width: 35px;
+  border: 1px solid #7B7B7A;
+}
+
+.small-navigation           { color: #4F4F4F; font-size: 9px; }
+A.small-navigation:link     { color: #4F4F4F; text-decoration: none; }
+A.small-navigation:visited  { color: #4F4F4F; text-decoration: underline; }
+A.small-navigation:hover    { color: #4F4F4F; text-decoration: underline; }
+A.small-navigation:active   { color: #4F4F4F; text-decoration: underline; }
+
+.memberNavigation           { color: #512A4C; font-size: 11px; }
+A.memberNavigation:link     { color: #512A4C; text-decoration: none; }
+A.memberNavigation:visited  { color: #512A4C; text-decoration: none; }
+A.memberNavigation:hover    { color: #512A4C; text-decoration: underline; }
+A.memberNavigation:active   { color: #512A4C; text-decoration: none; }
+
+.memberNavigation { color: #7B7B7A; font-size: 11px; }
+
+
+/* LINKS */
+
+.TopNav A {
+  color: #000000;
+  font-size: 10px;
+  text-decoration: none;
+}
+
+.TopNav A:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.BotNav A {
+  color: #000000;
+  font-size: 9px;
+  text-decoration: none;
+}
+
+.BotNav A:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.Sml A {
+  font-size: 10px;
+}
+
+.Sml A:hover {
+  font-size: 10px;
+}
+
+.navLink {
+  cursor:hand;
+}
+
+.navLink A {
+  color: #000000;
+  font-size: 11px;
+  text-decoration: none;
+}
+
+.navLink A:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.NotSelected A {
+  color: #7B7B7A;
+  font-size: 11px;
+  text-decoration: none;
+}
+
+.NotSelected A:hover {
+  color: #000000;
+  text-decoration: none;
+}
+
+.Selected A {
+  color: #512A4C;
+  font-size: 11px;
+  text-decoration: none;
+}
+
+.Selected A:hover {
+  color: #512A4C;
+  text-decoration: none;
+}
+
+a.Red {
+  color: red;
+}
+
+.Euro {
+ color: #7E7D7D;
+}
+
+.Eurototal {
+ color: #FF3434;
+}
+
+.siteMap { font-size: 10px }
+.siteMap A { font-size: 10px }
+.siteMap A:hover { font-size: 10px }
+
+.carText { 
+   background-color: #512A4C; 
+   width:100%;
+   padding: 6px;
+   font-size: 14px;
+   font-weight: bold;
+   font-family: Arial, Helvetica, sans-serif;
+   color: white;
+   border-left: 3px solid white;
+   border-right: 3px solid white;
+}
+
+.carText a { 
+   font-size: 14px;
+   font-weight: normal;
+   font-family: Arial, Helvetica, sans-serif;
+   color: white;
+   font-weight: bold;
+   text-decoration: none;
+}
+
+/* TEXT STYLES */
+.price {
+  font-family: arial, helvetica, sans serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.Car {
+  font-size: 14px;
+  color: #660066;
+  font-weight: bold;
+}
+
+.ProductType {
+  font-size: 11px;
+  font-weight: bold;
+  color: #002AFF;
+}
+
+.PurpleBgText {
+  color: #FFFFFF;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.Selected {
+  color: #512A4C;
+}
+
+.NotSelected {
+  color: #7B7B7A;
+}
+
+.topProducts {
+  width: 25%;
+  vertical-align: top;
+  padding-left:12px;
+}
+
+.topProducts a {
+  font-family: arial, helvetica, san serif;
+  font-size: 12px;
+  text-decoration: none;
+  color: #7B7B7A;
+}
+
+.topProducts a:hover {
+  font-family: arial, helvetica, san serif;
+  font-size: 12px;
+  text-decoration: none;
+  color: #512A4C;
+}
+
+.whats-hot a {
+  font-family: arial, helvetica, san serif;
+  font-size: 12px;
+  text-decoration: none;
+  color: #7B7B7A;
+}
+
+.whats-hot a:hover {
+  font-family: arial, helvetica, san serif;
+  font-size: 12px;
+  text-decoration: none;
+  color: #512A4C;
+}
+
+.borderRight {
+  border-right: 1px solid #C1C1C1;
+}
+
+.interestedIn {
+  color: #512A4C;
+  height: 100px;
+  width: 20%;
+  text-align: center;
+  vertical-align: top;
+  padding:5px 5px 0 5px;
+}
+
+.searchCar {
+  width: 25%;
+  text-align: center;
+  padding-top: 5px;
+  vertical-align: middle;
+}
+
+.searchCar a {
+  font-family: arial, helvetica, san serif;
+  font-size: 12px;
+  text-decoration: none;
+  color: #7B7B7A;
+}
+
+.searchCar a:hover {
+  font-family: arial, helvetica, san serif;
+  font-size: 12px;
+  text-decoration: none;
+  color: #512A4C;
+}
+
+.searchCarManufacturer {
+  width: 20%;
+  text-align: center;
+  padding-top: 5px;
+  vertical-align: top;
+}
+
+.searchCarModel {
+  width: 20%;
+  text-align: center;
+  vertical-align: top;
+  padding-top: 5px;
+  height: 60px;
+}
+
+.searchBrand {
+  width: 20%;
+  text-align: center;
+  padding-top: 5px;
+  vertical-align: top;
+}
+
+.interestedInText {
+  color: #4F4F4F;
+  padding-top: 5px;
+}
+
+.categoryHeader {
+   font-size: 17px;
+   font-weight: bold;
+   font-family: Arial, Helvetica, sans-serif;
+   padding: 0px;
+   margin: 0px;
+   color: #4F4F4F;
+}
+
+.categoryHeader a {
+  text-decoration: none;
+  font-size: 17px;
+  color: #4F4F4F;
+}
+
+.pageHeader {
+   font-size: 17px;
+   font-weight: bold;
+   font-family: Arial, Helvetica, sans-serif;
+   padding: 0px;
+   margin: 0px;
+   color: #512A4C;
+}
+
+.Sml {
+  font-size: 10px;
+}
+
+.Separator {
+  font-size: 10px;
+  color: #7B7B7A;
+}
+
+.SpecialOffer {
+  color: #FF0000;
+  font-size: 9px;
+}
+
+.footerText {
+  font-size: 9px; 
+  color: #4F4F4F;
+}
+
+.SpecialOfferLrg {
+  color: #FF0000;
+  font-size: 14px;
+}
+
+.Bold {
+  font-weight: bold;
+}
+
+.Red { color: #FF0000; }
+.Red A { color: #FF0000; }
+.Red A:hover { color: #FF0000; }
+
+.White {
+  color: #FFFFFF;
+}
+
+.ErrorBullet {   
+  color: #FF0000;
+  line-height: 15px;
+  margin-left: 215px;
+  margin-right: 5px;
+  margin-bottom: 0px;
+}
+
+.SmallBasketHeader {
+  color: #512A4C;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+.WarningStar {
+  color: red;
+  margin-left:5px;
+}
+
+.TopNav {
+  font-size: 10px;
+  color: black;
+}
+
+.largered {
+  font-weight: bold; 
+  font-size: 16px;
+  line-height: 16px; 
+  font-family: arial, helvetica
+}
+
+.largeredRed {
+  font-weight: bold; 
+  font-size: 21px;
+  color: #512A4C; 
+  line-height: 16px; 
+  font-family: arial, helvetica, san serif;
+}
+
+.largeGrey {
+  font-weight: bold; 
+  font-size: 21px;
+  color: #5A5A5A;
+  font-family: arial, helvetica, san serif;
+}
+
+.titleM {
+  font-family: arial, helvetica, san serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.titleM a {
+  font-family: arial, helvetica, san serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: #512A4C;
+  text-decoration: underline;
+}
+
+.titleM a:hover {
+  text-decoration: underline;
+}
+
+.titleL {
+  font-family: arial, helvetica, san serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.titleL a {
+  font-family: arial, helvetica, san serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #512A4C;
+  text-decoration: underline;
+}
+
+titleL a:hover {
+  text-decoration: underline;
+}
+
+.descriptionM {
+  font-family: arial, helvetica, san serif;
+  font-size: 12px;
+}
+
+.descriptionM a {
+  font-family: arial, helvetica, san serif;
+  font-size: 12px;
+  color: #5A5A5A;
+  text-decoration: none;
+}
+
+.descriptionM a:hover {
+	text-decoration: underline;
+}
+
+.descriptionS {
+  font-family: arial, helvetica, san serif;
+  font-size: 9px;
+  color: #7B7B7A;
+}
+
+.DrkGrey {
+  color: #242321;
+}
+
+.LghGrey {
+  color: #C1C1C1;
+}
+
+.Green {
+  color: #00C821;
+}
+
+.productAdd {
+  padding: 5px;
+  background-color: #EAE9E9;
+  border: 1px solid #C1C1C1;
+}
+
+.whats-new-header {
+ font-size: 15px;
+ font-weight: bold;
+ color: #512A4C;
+ padding: 0 0 5px 0;
+}
+
+.whats-new-link  a {
+  font-size: 11px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #7B7B7A;
+}
+
+.whats-new-link  a:hover {
+  font-size: 11px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #512A4C;
+}
+
+.KW-link  a:hover {
+  font-size: 12px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #570082;
+}
+
+.whats-new-para {
+  margin: 3px 0 0 0;
+  padding: 0 0 3px 0;
+  border-bottom: 1px solid #DFDFDF;
+}
+
+#customer-table td {
+  font-size: 12px;
+  border-top: 1px solid #EAE9E9;
+  border-bottom: 1px solid #EAE9E9;
+  width: 20%;
+}
+
+.customer-table p {
+  font-size: 12px;
+  margin: 1px 0 0 0;
+}
+
+#customer-table h2 {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.customer-table-left {
+  border-left: 1px solid #EAE9E9;
+}
+
+.customer-table-right {
+  border-right: 1px solid #EAE9E9;
+}
+
+/* BACKGROUNDS & BORDERS */
+.TopBg {
+  background-color: #512A4C;
+  background:url(../images/baks/top__bak.jpg);
+}
+
+.TopXmasBg {
+  background-color: #5E3553;
+  background:url(../images/baks/xmas_top.gif);
+}
+
+.XmasFillBg {
+  background-color: #5E3553;
+  background:url(../images/baks/xmas_top_bg.gif);
+}
+
+.GreyBgDrk {
+  background-color: #7B7B7A;
+  height:1px;
+  padding:0;margin:0;font-size:0;
+}
+
+.GreyBgLght {
+  background-color: #EAE9E9;
+}
+
+.GreyBgFaint {
+  background-color: #F8F8F8;
+}
+
+.RedBg {
+  background-color: red;
+}
+
+.GreenBg {
+  background-color: #00CF09;
+}
+
+.LineBgHorzTop {
+  background-color: #FFFFFF;
+  border-top: 1px solid #7B7B7A;
+  height: 11px;
+  font-size: 7px;
+}
+
+.LineBgHorzBot {
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #7B7B7A;
+  height: 11px;
+  font-size: 7px;
+}
+
+.LineBgVertLft {
+  background-color: #FFFFFF;
+  border-left: 1px solid #7B7B7A;
+  width: 11px;
+  font-size: 7px;
+}
+
+.LineBgVertRght {
+  background-color: #FFFFFF;
+  border-right: 1px solid #7B7B7A;
+  width: 11px;
+  font-size: 7px;
+}
+
+.LineBgHorzTopGry {
+  background-color: #EAE9E9;
+  border-top: 1px solid #7B7B7A;
+  height: 11px;
+  font-size: 7px;
+}
+
+.LineBgHorzBotGry {
+  background-color: #EAE9E9;
+  border-bottom: 1px solid #7B7B7A;
+  height: 11px;
+  font-size: 7px;
+}
+
+.LineBgVertLftGry {
+  background-color: #EAE9E9;
+  border-left: 1px solid #7B7B7A;
+  width: 11px;
+  font-size: 7px;
+}
+
+.LineBgVertRghtGry {
+  background-color: #EAE9E9;
+  border-right: 1px solid #7B7B7A;
+  width: 11px;
+  font-size: 7px;
+}
+
+.DivBgHorz {
+  background-color: #C1C1C1;
+  height: 1px;
+  padding:0;margin:0;font-size:0;
+}
+
+.DivBgVert {
+  background-color: #C1C1C1;
+  width: 1px;
+  padding:0;margin:0;font-size:0;
+}
+
+.DrkGreyBorder {
+  border: 1px solid #7B7B7A;
+  background-color: #FFFFFF;
+}
+
+.PurpleBg {
+  background-color: #512A4C;
+  color: #FFFFFF;
+  font-size: 11px;
+}
+
+.Padding {
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.ExtraPadding {
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.sitemapLinks A { font-size: 12px; }
+
+.productBg {
+  width: 200px;
+  height: 196px;
+  padding-left: 4px;
+  background-image: url(../images/products/backgrounds/outline.gif);
+  background-repeat: no-repeat;
+}
+
+.redBox {
+  padding: 6px;
+  text-align: center;
+  background-color: red;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.purpleBox {
+  padding: 6px;
+  background-color: #570082;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/*///////////////////////////////////// festive banner */
+
+.festiveBanner {
+  background-color: #B8192B;
+  background-image: url(../images/festive_banner_bg.gif);
+}
+
+.offersBanner {
+  background-color: #B8192B;
+  font-family: arial, helvetica, san serif;
+  color: white;
+  font-size: 23px;
+  height: 35px;
+}
+
+.greyBottom {
+  background-color: #EAE9E9;
+  font-size: 15px;
+  font-weight: bold;
+  color: #512A4C;
+}
+
+.greyLink {
+  background-color: #EAE9E9;
+  font-size: 15px;
+  font-weight: bold;
+  color: #7B7B7A;
+}
+
+.greyLink a {
+  font-size: 15px;
+  font-weight: bold;
+  color: #512A4C;
+  text-decoration: none;
+  padding: 0 6px 0 6px;
+}
+
+.linkBullet {
+  list-style-image: url(../images/bullet.gif);
+  font-family: arial, helvetica, sans serif;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.linkBullet a {
+  font-family: arial, helvetica, sans serif;
+  font-size: 12px;
+  text-decoration: none;
+  line-height: 16px;
+  color:#4F4F4F;
+}
+
+.linkBullet a:hover {
+  font-family: arial, helvetica, sans serif;
+  font-size: 12px;
+  text-decoration: none;
+  line-height: 16px;
+  color:#512A4Cl;
+}
+
+.linkbulletTitle {
+  font-family: arial, helvetica, sans serif;
+  padding: 15px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.customerBullet {
+  list-style-image: url(../images/bullet.gif);
+  font-family: arial, helvetica, sans serif;
+  font-size: 12px;
+  line-height: 16px;
+  margin-left:8px;
+  margin-top:6px;
+  margin-bottom:4px;
+}
+
+.customerBullet a {
+  font-family: arial, helvetica, sans serif;
+  font-size: 12px;
+  text-decoration: none;
+  line-height: 16px;
+  color:#4F4F4F;
+}
+
+.homeText {
+ font-family: arial, helvetica, sans serif;
+ font-size: 12px;
+}
+
+.competition {
+  background-color: #D3252F;
+  margin: 3px;
+  color: white;
+  font-size: 12px;
+  width: 348px;
+}
+
+.competitionSmall {
+  font-size: 10px;
+  color: white;
+}
+
+.competitionTitle {
+  font-size: 15px;
+  color: white;
+}
+
+.search-text {
+  font-size: 10px;
+  color: #9F9F9F;
+  background-color: black;
+}
+
+.search-text a {
+  font-size: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.search-text a:hover {
+  font-size: 10px;
+  color: white;
+  text-decoration: underline;
+}
+
+.grey-search-text {
+  font-size: 10px;
+  color: #7B7B7A;
+  background-color: #EAE9E9;
+}
+
+.grey-search-text  a {
+  font-size: 10px;
+  color: #512A4C;
+  text-decoration: none;
+}
+
+.grey-search-text  a:hover {
+  font-size: 10px;
+  color: #512A4C;
+  text-decoration: underline;
+}
+
+.manufacturer-bg {
+  background-position: top left;
+  background-repeat: no-repeat;
+  color: white;
+  font-weight: bold;
+  font-size: 17px;
+  width: 549px;
+  height: 52px;
+  padding-left: 15px;
+}
+
+.black {
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.black a {
+  color: white;
+  font-size: 11px;
+}
