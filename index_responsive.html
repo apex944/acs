@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Competition Systems - Auto Racing Parts and Equipment</title>
+    
+    <meta name="description" content="APEX COMPETITION SYSTEMS - Pittsburgh - Racing technology and equipment for amateur and professional auto racers">
+    <meta name="keywords" content="racing, motorsports, auto parts, performance equipment, track racing">
+    
+    <!-- Modern CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Modern responsive approach -->
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 15px;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .grid, .flex {
+                flex-direction: column;
+            }
+            
+            .social-links {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="container">
+        <img src="images/home_graphic_top.jpg" alt="Apex Competition Systems Header" class="full-width">
+        
+        <nav class="flex">
+            <div class="logo">
+                <h1>Apex Competition Systems</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/products">Products</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container grid">
+        <section class="company-intro">
+            <h2>"Get On Track" with Apex Competition</h2>
+            <p>Apex Competition Systems focuses on improving the driving experience of sports cars and racing cars through high-performance products.</p>
+            
+            <h3>Our Specialty: Track-Stud™ Wheel Studs</h3>
+            <p>Custom designed steel wheel studs and nuts engineered for competition, proven in SCCA and Grand-Am racing.</p>
+        </section>
+
+        <section class="product-highlights grid">
+            <div class="product">
+                <h3>Complete Product Line</h3>
+                <a href="Catemp/Catemp.html">
+                    <img src="images/TCParts-1.png" alt="Product Line">
+                </a>
+            </div>
+
+            <div class="product">
+                <h3>ACS Track-Studs</h3>
+                <a href="https://Track-Studs.com" target="_blank">
+                    <img src="images/Track_Studs_Head.png" alt="Track Studs">
+                </a>
+            </div>
+        </section>
+
+        
+    </main>
+
+
+
+    <!-- Modern JavaScript -->
+    <script src="js/main.js" defer></script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Competition Systems - Auto Racing Parts and Equipment</title>
+    
+    <meta name="description" content="APEX COMPETITION SYSTEMS - Pittsburgh - Racing technology and equipment for amateur and professional auto racers">
+    <meta name="keywords" content="racing, motorsports, auto parts, performance equipment, track racing">
+    
+    <!-- Bootstrap Icons (optional) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <!-- Modern CSS -->
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 15px;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        /* Bootstrap-inspired Dark Footer */
+        .footer-dark {
+            background-color: #212529;
+            color: #f8f9fa;
+            padding: 3rem 0;
+        }
+        
+        .footer-dark a {
+            color: #adb5bd;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-dark a:hover {
+            color: #ffffff;
+        }
+        
+        .footer-dark .footer-column {
+            margin-bottom: 1.5rem;
+        }
+        
+        .footer-dark .footer-column h5 {
+            color: #ffffff;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+        
+        .footer-dark .social-icons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .footer-dark .social-icons a {
+            color: #adb5bd;
+            font-size: 1.5rem;
+        }
+        
+        .footer-dark .social-icons a:hover {
+            color: #ffffff;
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 1.5rem;
+            margin-top: 1.5rem;
+            text-align: center;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .grid, .flex {
+                flex-direction: column;
+            }
+            
+            .social-links {
+                text-align: center;
+            }
+            
+            .footer-dark .footer-column {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+    <!-- Previous body content remains the same -->
+
+    <!-- Bootstrap-inspired Dark Footer -->
+    <footer class="footer-dark">
+        <div class="container">
+            <div class="grid">
+                <div class="footer-column">
+                    <h5>About Apex Competition</h5>
+                    <p>Specializing in high-performance racing equipment and Track-Stud™ wheel studs for motorsports enthusiasts.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h5>Quick Links</h5>
+                    <ul style="list-style-type: none; padding: 0;">
+                        <li><a href="/products">Products</a></li>
+                        <li><a href="/motorsports">Motorsports Services</a></li>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h5>Contact Information</h5>
+                    <p>
+                        Pittsburgh, PA<br>
+                        Email: info@apexcompetition.com<br>
+                        Phone: (412) XXX-XXXX
+                    </p>
+                </div>
+                
+                <div class="footer-column">
+                    <h5>Connect With Us</h5>
+                    <div class="social-icons">
+                        <a href="http://www.facebook.com/ApexCompetitionSystems" target="_blank">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="http://www.twitter.com/ApexCompetition" target="_blank">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a href="http://www.youtube.com/user/ApexCompetition" target="_blank">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Apex Competition Systems. All Rights Reserved.</p>
+                <div>
+                    <a href="/privacy">Privacy Policy</a> | 
+                    <a href="/terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modern JavaScript -->
+    <script src="js/main.js" defer></script>
+</body>
+</html>
