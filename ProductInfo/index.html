@@ -1,285 +1,269 @@
-<link rel="stylesheet" href="../Performance/thumbnailviewer.css" type="text/css" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="iso-8859-1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Apex Competition Systems - Track Stud Product Info</title>
+  <meta name="description" content="ACS Track Stud product information, technical details, and installation guidance from Apex Competition Systems.">
+  <link href="../js_css/apex_styles.css" rel="stylesheet">
+  <link href="/assets/css/site-shared.css" rel="stylesheet">
+  <link href="/assets/css/productinfo-pages.css" rel="stylesheet">
+  <style>
+    .productinfo-site-shell {
+      padding-bottom: 40px;
+    }
 
-<script src="../Performance/thumbnailviewer.js" type="text/javascript">
-/***********************************************
-* Image Thumbnail Viewer Script- © Dynamic Drive (www.dynamicdrive.com)
-* This notice must stay intact for legal use.
-* Visit http://www.dynamicdrive.com/ for full source code
-***********************************************/
-</script>
+    .productinfo-site-shell .site-header {
+      justify-content: center;
+    }
 
-<script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-var pageTracker = _gat._getTracker("UA-1402399-4");
-pageTracker._trackPageview();
-} catch(err) {}</script>
+    body {
+      background: #ffffff;
+    }
 
-<style type="text/css">
-<!--
-.style1 {color: #3366FF}
-.style2 {font-weight: bold}
-.style4 {font-size: 14px; font-weight: bold; color: #3366FF; }
--->
-</style>
+    .productinfo-page {
+      max-width: 790px;
+      margin: 0 auto 56px;
+      padding: 0 16px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      color: #4f4f4f;
+    }
 
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<HTML><HEAD>
-	<TITLE>Apex Competition Systems - Auto Racing Parts and Equipment</TITLE>
+    .productinfo-card {
+      padding: 0;
+    }
 
-<meta name="Description" content="APEX COMPETITION SYSTEMS - Pittsburgh - Racing technology and equipment for amateur and professional auto racers by GIAC, Hawk, Aeroquip, Fabspeed, Red Line, Robic, Bell, Earl's, Eibach, KW, Intercomp, Longacre, Momo, Sparco, Performance Friction, Tilton and more">
-<META NAME="KEYWORDS" CONTENT="APEX COMPETITION SYSTEMS, ACS, ACS Performance, ACS Motorsports, racing, technology, Recaro, Sparco, OMP, Alpinestars, Fabspeed, GIAC, APR, Revo, arai helmets, recaro seats, recaro child seats, sparco suits, sparco gloves, sparco shoes, alpinestars gloves, alpinestars underwear, sparco nomex, alpinestars nomex, oakley carbon x, recaro race seats, racing helmets, schroth harness, corbeau seats, schroth, corbeau, racing helmet, auto racing helmets, equipment, books, chassis setup equipment, lubricants, fluids, pit equipment, plumbing, cooling, brakes, clutch, batteries, exhaust, fuel, safety equipment, shop tools, Pittsburgh, stopwatch, hawker, oil coolers, fittings, air filters, velocity stacks, intake kits, synthetic oil, gear lube, grease, water wetter, aircraft fittings, braided hose, atl, aero tec labs, fuel cells, fuel cell bladders, pit fueling equipment, high flow air filters, steering wheels, brake pads, master cylinders, clutches, motorsports, racing, equipment, robic, setrab, intercomp, longacre, momo, MOMO, tilton">
-<meta name="MSSmartTagsPreventParsing" content="True">
-<meta name="Rating" content="General">
-<meta name="MS.Locale" content="EN-US">
-<meta name="Category" content="home page">
-<meta name="Robots" content="index,follow">
-<meta name="URL" content="http://www.apexcompetition.com">
-<meta name="Revisit-After" content="5 days">
+    .productinfo-title {
+      margin: 0 0 16px;
+    }
 
+    .productinfo-subnav {
+      margin: 0 0 24px;
+      color: #4f4f4f;
+      font-family: "Instrument Sans", sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+    }
 
-<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
-<LINK href="../js_css/apex_styles.css" type=text/css rel=stylesheet></STYLE>
+    .productinfo-subnav a {
+      display: inline-block;
+      position: relative;
+      color: #165fc2;
+      font-family: "Instrument Sans", sans-serif;
+      font-size: 16px !important;
+      font-weight: 700;
+      line-height: 1.7;
+      text-decoration: none;
+    }
 
+    .productinfo-subnav a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -2px;
+      height: 3px;
+      background: #2074e6;
+      transform: scaleX(0);
+      transform-origin: center;
+      transition: transform 0.18s ease;
+    }
 
-<script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-var pageTracker = _gat._getTracker("UA-1402399-2");
-pageTracker._trackPageview();
-} catch(err) {}</script>
+    .productinfo-subnav a:hover::after,
+    .productinfo-subnav a:focus-visible::after {
+      transform: scaleX(1);
+    }
 
-<script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-<!--
+    .productinfo-callout {
+      margin: 0 0 14px;
+      text-align: center;
+      color: #4f4f4f;
+      font-size: 16px;
+      line-height: 1.7;
+    }
 
-try {
-var pageTracker = _gat._getTracker("UA-1402399-4");
-pageTracker._trackPageview();
-} catch(err) {}
-//-->
-</script>
+    .productinfo-note {
+      margin: 0 0 18px;
+      text-align: right;
+      color: #4f4f4f;
+      font-size: 16px;
+    }
 
+    .productinfo-grid {
+      display: grid;
+      gap: 26px;
+    }
 
+    .productinfo-item {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 320px;
+      gap: 24px;
+      align-items: start;
+      padding-top: 22px;
+      border-top: 1px solid rgba(20, 32, 44, 0.1);
+    }
 
-<SCRIPT language=JavaScript src="../js_css/dhtml_menus.js"
-type=text/javascript></SCRIPT>
+    .productinfo-item:first-child {
+      border-top: 0;
+      padding-top: 0;
+    }
 
-<SCRIPT language=JavaScript src="../js_css/dropSubMenus.js"
-type=text/javascript></SCRIPT>
+    .productinfo-item h2 {
+      margin: 0 0 8px;
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 0;
+      text-transform: none;
+      color: #000000;
+    }
 
-<META content="MSHTML 6.00.2900.2802" name=GENERATOR>
+    .productinfo-item p {
+      margin: 0;
+      color: #4f4f4f;
+      line-height: 1.7;
+      font-size: 16px;
+    }
 
-</HEAD>
+    .productinfo-item img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
 
-<BODY leftMargin=0 background=../images/home_bg_tile.gif topMargin=0 marginheight="0" marginwidth="0">
+    .productinfo-label {
+      color: #165fc2;
+      font-weight: 700;
+      text-transform: none;
+      letter-spacing: 0;
+    }
 
-
-
-<table width="800" border="0" align="center" cellpadding="0" cellspacing="0">
-  <tr>
-    <td><a href="/"><img src="../images/apex_comp_150.jpg" alt="ACS" width="160" height="70" border="0"></a></td>
-  </tr>
-  <tr>
-    <td>
-	<br />
-<div align="center">
-        <table width="800" border="0" cellspacing="0" cellpadding="0">
-                    <tr>
-            <td><a href="/" onMouseOver="MM_swapImage('dyno_tuning','','../images/btn_dyno_tuning_ovr.gif',1)" onMouseOut="MM_swapImgRestore()"><img src="../images/btn_dyno_tuning.gif" name="dyno_tuning" width="165" height="16" border="0" usemap="#dyno_tuningMap" id="dyno_tuning"></a></td>
-            <td><a href="http://www.apexcompetition.com/ProductInfo" onMouseOver="MM_swapImage('gallery','','../images/btn_gallery_ovr.gif',1)" onMouseOut="MM_swapImgRestore()"><img src="../images/btn_gallery.gif" name="gallery" width="160" height="16" border="0" usemap="#galleryMap" id="gallery"></a></td>
-            <td><a href="http://www.apexcompetition.com/Catemp" onMouseOver="MM_swapImage('performance','','../images/btn_performance_ovr.gif',1)" onMouseOut="MM_swapImgRestore()"><img src="../images/btn_performance.gif" name="performance" width="160" height="16" border="0" usemap="#performanceMap" id="performance"></a></td>
-			<td><a href="http://www.apexcompetition.com/motorsports" onMouseOver="MM_swapImage('Motorsports','','../images/btn_mtrsprts_ovr.gif',1)" onMouseOut="MM_swapImgRestore()"><img src="../images/btn_mtrsprts.gif" name="Motorsports" width="160" height="16" border="0" usemap="#ACS _euroMap" id="ACS _euro"></a></td>
-            <td><a href="http://www.apexcompetition.com/about" onMouseOver="MM_swapImage('about_us','','../images/btn_about_us_ovr.gif',1)" onMouseOut="MM_swapImgRestore()"><img src="../images/btn_about_us.gif" name="about_us" width="160" height="16" border="0" usemap="#about_usMap" id="about_us"></a></td>
-
-          </tr>
-        </table>
+    @media screen and (max-width: 820px) {
+      .productinfo-item {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="site-shell productinfo-site-shell">
+    <header class="site-header">
+      <button type="button" class="site-mobile-toggle" aria-label="Navigation" aria-controls="site-mobile-drawer" aria-expanded="false">
+        <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path d="M3 4.16675H18M3 10.0001H18M3 15.8334H18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <a class="site-logo" href="/">
+        <img src="/images/apex_comp_150.jpg" alt="Apex Competition Systems">
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/">Home</a>
+        <a href="/ProductInfo/" class="is-current">Products</a>
+        <a href="/catemp/">Shop</a>
+        <a href="/mcs/">Suspensions</a>
+        <a href="/about/">About Us</a>
+      </nav>
+    </header>
+    <div class="site-mobile-drawer" id="site-mobile-drawer" hidden>
+      <div class="site-mobile-drawer__backdrop"></div>
+      <div class="site-mobile-drawer__panel">
+        <div class="site-mobile-drawer__header">
+          <button type="button" class="site-mobile-close" aria-label="Close navigation">
+            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path d="M5 5L15 15M15 5L5 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </button>
+        </div>
+        <nav class="site-mobile-nav" aria-label="Mobile"></nav>
+      </div>
     </div>
-	</td>
-  </tr>
-  <tr>
-    <td><img src="../about/images/spacer_under_nav.gif" width="24" height="38" border="0" usemap="#Map"></td>
-  </tr>
-  <tr>
-    <td><table width="790" border="0" align="center" cellpadding="0" cellspacing="0">
-        <tr>
-          <td width="390"><p class="style2 style5"><img src="../about/images/products_title.gif" alt="About Us" width="171" height="33"></p></td>
-          <td width="400">&nbsp;</td>
-        </tr>
-        <tr>
-          <td width="390">
-&nbsp;&nbsp; <a href="#">Product Info.</a> &nbsp;&nbsp; | &nbsp;&nbsp;
-<a href="#">Technical Info.</a>&nbsp;&nbsp; | &nbsp;&nbsp;
-<a href="#">Features</a>&nbsp;&nbsp; | &nbsp;&nbsp;
-<a href="#">Installation</a> </td>
+  </div>
 
-          <td valign="top"><div align="right"></div></td>
-        </tr>
-        <tr>
-        	<td><p><br><br><div align="right">click an image to enlarge</div>
-		<hr size="1" noshade>
+  <main class="productinfo-page">
+    <section class="productinfo-card">
+      <div class="productinfo-title" aria-hidden="true" style="height: 33px;"></div>
 
-				<table width="650" border="0" cellspacing="0" cellpadding="0">
-				  <tr>
-					<td width="300" align="left" valign="top"><p><br>
-					    <span class="style4">Pro Series</span> <br />
-				      <strong>ACS 'Bullet Nose' Track Studs</strong><br>
-					M14.Pro.90<br>
-					M14.Pro.80<br>
-					M14.Pro.70 <span class="style1"></span><br>
-					<br />
-					M12.Pro.85<br>
-					M12.Pro.75 <br>
-					<br>
-					The race studs professionals use.<br>
-					Bullet nose design allows for fastest wheel changes by aligning the nut parallel to threads. Rounded nose reduces missed attempts and thread damage.
-				    </p>
-					  </td>
-					<td align="right" >
-					<a href="images/ACS_Bullet_90L.jpg" rel="thumbnail" title="ACS Track Studs">
-					<IMG src="images/ACS_Bullet_90.jpg" alt="ACS Track Studs" width="294" height="200" vspace="0" border="0"></a>
-					<br /><hr size="1" noshade>
-					</td>
-				  </tr>
+      <div class="productinfo-subnav">
+        <a href="/ProductInfo/">Product Info.</a> |
+        <a href="/ProductInfo/stud_info.html">Technical Info.</a> |
+        <a href="/ProductInfo/stud_features.html">Features</a> |
+        <a href="/ProductInfo/stud_install.html">Installation</a>
+      </div>
 
-				  <tr>
-					<td width="300" align="left" valign="top"><br>
-					<strong><span class="style4">Race Series</span><br />
-					ACS Track Studs - 'black'</strong><br>
-					M12.DE.55<br>
-					M12.DE.65<br>
-					M12.DE.75<br><br>
-					M14.DE.65<br>
-					M14.DE.80<br>
-					<br>
-					Professional grade alloy racing studs designed for serious competition. Low friction coating to prevent galling. Various sizes and designs for numerous applications.  Don't see what you need? Contact us for custom wheel stud manufacturing!
+      <p class="productinfo-note">Click an image to enlarge.</p>
 
-					</td>
-					<td align="right" >
-					<a href="images/ACS_TrackStud_DEL.jpg" rel="thumbnail" title="ACS Track Studs">
-					<IMG src="images/ACS_TrackStud_DE.jpg" alt="ACS Track Studs" width="289" height="200" vspace="0" border="0"></a>
-					<hr size="1" noshade>
-					</td>
-				  </tr>
+      <div class="productinfo-grid">
+        <article class="productinfo-item">
+          <div>
+            <h2><span class="productinfo-label">Pro Series</span><br>ACS 'Bullet Nose' Track Studs</h2>
+            <p>M14.Pro.90<br>M14.Pro.80<br>M14.Pro.70<br><br>M12.Pro.85<br>M12.Pro.75<br><br>The race studs professionals use. Bullet nose design allows for fastest wheel changes by aligning the nut parallel to the threads. The rounded nose reduces missed attempts and thread damage.</p>
+          </div>
+          <a href="images/ACS_Bullet_90L.jpg"><img src="images/ACS_Bullet_90.jpg" alt="ACS Bullet Nose Track Studs"></a>
+        </article>
 
-				  <tr>
-					<td width="300" align="left" valign="top"><br>
-					  <strong>60° Conical Seat Nuts</strong><br>
-					M12.DE.CON<br>
-					M12.US.CON<br><br>
-					M14.DE.CON<br>
-					M14.US.CON<br>
-					<br>
-					Conical, or "cone nuts" use a 60° taper on them and are popular with most aftermarket wheels, most racing wheels and many OE wheels as well.  Available for 12 & 14mm studs.
+        <article class="productinfo-item">
+          <div>
+            <h2><span class="productinfo-label">Race Series</span><br>ACS Track Studs - Black</h2>
+            <p>M12.DE.55<br>M12.DE.65<br>M12.DE.75<br><br>M14.DE.65<br>M14.DE.80<br><br>Professional grade alloy racing studs designed for serious competition. Low friction coating helps prevent galling. Various sizes and designs are available for numerous applications. Don't see what you need? Contact us for custom wheel stud manufacturing.</p>
+          </div>
+          <a href="images/ACS_TrackStud_DEL.jpg"><img src="images/ACS_TrackStud_DE.jpg" alt="ACS Race Series Track Studs"></a>
+        </article>
 
-					</td>
-					<td align="right" >
-					<a href="images/ACS_ConeL.jpg" rel="thumbnail" title="ACS Track Studs">
-					<IMG src="images/ACS_Cone.jpg" alt="ACS Track Studs" width="303" height="200" vspace="0" border="0"></a>
-					<hr size="1" noshade>
-					</td>
-				  </tr>
+        <article class="productinfo-item">
+          <div>
+            <h2>60 Degree Conical Seat Nuts</h2>
+            <p>M12.DE.CON<br>M12.US.CON<br><br>M14.DE.CON<br>M14.US.CON<br><br>Conical, or cone nuts, use a 60 degree taper and are popular with most aftermarket wheels, most racing wheels, and many OE wheels as well. Available for 12 mm and 14 mm studs.</p>
+          </div>
+          <a href="images/ACS_ConeL.jpg"><img src="images/ACS_Cone.jpg" alt="ACS Conical Seat Nuts"></a>
+        </article>
 
-					<tr>
-					<td width="300" align="left" valign="top"><br>
-					  <strong>R13 & R14 Spherical Seat Nuts</strong><br>
-					M12.DE.SPH<br>
-					M12.US.SPH<br><br>
-					M14.DE.SPH<br>
-					M14.US.SPH<br>
-					<br>
-					Spherical, or ball seat nuts have a radius ground into them to match the OEM wheel nut/bolt on cars such as VW, Audi and Porsche. It is very important to match the radius of your OE type wheel seats with the proper radius nuts.
+        <article class="productinfo-item">
+          <div>
+            <h2>R13 and R14 Spherical Seat Nuts</h2>
+            <p>M12.DE.SPH<br>M12.US.SPH<br><br>M14.DE.SPH<br>M14.US.SPH<br><br>Spherical, or ball seat nuts, have a radius ground into them to match the OEM wheel nut or bolt on cars such as VW, Audi, and Porsche. It is very important to match your OE wheel seat style with the proper radius nuts.</p>
+          </div>
+          <a href="images/ACS_Sph_nutsL.jpg"><img src="images/ACS_Sph_nuts.jpg" alt="ACS Spherical Seat Nuts"></a>
+        </article>
+      </div>
+    </section>
+  </main>
 
-					</td>
-					<td align="right" >
-					<a href="images/ACS_Sph_nutsL.jpg" rel="thumbnail" title="ACS Track Studs">
-					<IMG src="images/ACS_Sph_nuts.jpg" alt="ACS Track Studs" width="264" height="200" vspace="0" border="0"></a>
-					<hr size="1" noshade>
-					</td>
-				  </tr>
+  <footer class="shared-site-footer">
+    <div class="shared-site-footer__inner">
+      <div class="shared-site-footer__logo">
+        <img src="/ACS_cutout_Lrg.png" alt="Apex Competition Systems">
+      </div>
+      <div>
+        <div class="shared-site-footer__copy">Apex Competition Systems supports Club Racers.<br>Focused on Touring Car, Production Car, and GT Car racing in North America.</div>
+        <div class="shared-site-footer__email">
+          <input type="text" class="footer-email-input" aria-label="Sales email address" readonly data-email-user="sales" data-email-domain="ApexCompetition" data-email-tld="com">
+        </div>
+      </div>
+      <nav class="shared-site-footer__links" aria-label="Footer">
+        <ul>
+          <li><a href="/collections/all/">Shop</a></li>
+          <li><a href="/Contact/">Contact</a></li>
+          <li><a href="/policies/privacy-policy/">Privacy Policy</a></li>
+          <li><a href="/about/">About Us</a></li>
+          <li><a href="/catemp/">Sales</a></li>
+          <li><a href="/Contact/">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="shared-site-footer__social">
+        <a href="https://www.facebook.com/apexcompetitionsystems" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path d="M11.25 17.5V10.8333H13.5417L13.9583 8.33333H11.25V6.875C11.25 6.15167 11.4883 5.625 12.5417 5.625H14.1667V3.33333C13.885 3.295 12.9183 3.20833 11.7917 3.20833C9.44 3.20833 7.91667 4.55 7.91667 7.01667V8.33333H5.625V10.8333H7.91667V17.5H11.25Z" fill="currentColor"/></svg>
+        </a>
+        <a href="#" aria-label="YouTube">
+          <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path d="M17.0833 6.49167C16.9167 5.875 16.425 5.39167 15.8 5.225C14.6667 4.91667 10 4.91667 10 4.91667C10 4.91667 5.33333 4.91667 4.2 5.225C3.575 5.39167 3.08333 5.875 2.91667 6.49167C2.60833 7.60833 2.60833 10 2.60833 10C2.60833 10 2.60833 12.3917 2.91667 13.5083C3.08333 14.125 3.575 14.6083 4.2 14.775C5.33333 15.0833 10 15.0833 10 15.0833C10 15.0833 14.6667 15.0833 15.8 14.775C16.425 14.6083 16.9167 14.125 17.0833 13.5083C17.3917 12.3917 17.3917 10 17.3917 10C17.3917 10 17.3917 7.60833 17.0833 6.49167Z" stroke="currentColor" stroke-width="1.4"/><path d="M8.33333 12.5V7.5L12.5 10L8.33333 12.5Z" fill="currentColor"/></svg>
+        </a>
+        <a href="https://x.com/ApexCompetition" target="_blank" rel="noopener noreferrer" aria-label="X">
+          <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path d="M4 3.75L8.996 10.4308L4.03167 16.25H5.79333L9.78333 11.5733L13.28 16.25H16L10.7233 9.19167L15.345 3.75H13.5833L9.93667 8.04833L6.72 3.75H4ZM6.67 5.08667H6.05083L13.33 14.9133H13.9492L6.67 5.08667Z" fill="currentColor"/></svg>
+        </a>
+        <a href="https://www.instagram.com/touringcarparts/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path d="M9.99935 13.3333C10.8834 13.3333 11.7313 12.9821 12.3564 12.357C12.9815 11.7319 13.3327 10.884 13.3327 9.99996C13.3327 9.1159 12.9815 8.26806 12.3564 7.64294C11.7313 7.01782 10.8834 6.66663 9.99935 6.66663C9.11529 6.66663 8.26745 7.01782 7.64233 7.64294C7.0172 8.26806 6.66602 9.1159 6.66602 9.99996C6.66602 10.884 7.0172 11.7319 7.64233 12.357C8.26745 12.9821 9.11529 13.3333 9.99935 13.3333Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M2.5 13.3333V6.66667C2.5 5.5616 2.93899 4.50179 3.72039 3.72039C4.50179 2.93899 5.5616 2.5 6.66667 2.5H13.3333C14.4384 2.5 15.4982 2.93899 16.2796 3.72039C17.061 4.50179 17.5 5.5616 17.5 6.66667V13.3333C17.5 14.4384 17.061 15.4982 16.2796 16.2796C15.4982 17.061 14.4384 17.5 13.3333 17.5H6.66667C5.5616 17.5 4.50179 17.061 3.72039 16.2796C2.93899 15.4982 2.5 14.4384 2.5 13.3333Z" stroke="currentColor" stroke-width="1.5"/><path d="M14.584 5.42506L14.5923 5.41589" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="shared-site-footer__bottom">&copy; 2026, Apex Competition Systems</div>
+  </footer>
 
-
-					<tr>
-					<td width="300" align="left" valign="top"><br>
-
-					<br>
-
-
-					</td>
-
-				  </tr>
-				</table>
-
-	</td>
-  </tr>
-  <tr>
-    <td><br></td>
-  </tr>
-</table>
-
-<!-- ACS New Temp Footer  -->
-
-<table width="820"  border="0" align="center" cellpadding="0" cellspacing="0">
-	<tr>
-		<td></td><td height="1" class="GreyBgDrk"></td><td></td>
-	</tr>
-  	
-	<tr>
-		<td style="border-left:9px solid white;"><img src="images/grey_bottom_left_corner.gif" width="8" height="30"></td>
-		<td width="100%" align="center" class="greyBottom" style="padding-right:10px;">
-
-		  <TABLE border="0" cellpadding="0" cellspacing="0" align="center">
-			<TR>
-				<TD align="center" class="BotNav"><A href="/">Home</A></TD>
-				<TD><SPAN class="Separator" style="margin-left:12px; margin-right:12px;">/</SPAN></TD>
-				<TD align="center" class="BotNav"><A href="/about/">About Us</A></TD>
-				<TD><SPAN class="Separator" style="margin-left:12px; margin-right:12px;">/</SPAN></TD>
-				<TD align="center" class="BotNav"><a href="catemp/"> Sales </A></TD>
-
-
-				<TD><SPAN class="Separator" style="margin-left:12px; margin-right:12px;">/</SPAN></TD>
-				<TD align="center" class="BotNav"><a href="about/contact_us.html">Contact</a></TD>
-			</TR>
-		  </TABLE>
-		
-	  </td>
-	  <td style="border-right:9px solid white;"><img src="images/grey_bottom_right_corner.gif" width="8" height="30">
-	  </td>
-
-    </tr>
-</table> 
-
-<TABLE width="800" border="0" cellspacing="0" cellpadding="0" align="center">
-
-              <TR>
-                <TD height="1" class="GreyBgDrk"></TD>
-              </TR>
-
-              <TR>
-                <TD>
-                  <TABLE width="100%" border="0" cellspacing="0" cellpadding="5">
-                    <TR>
-	                   <TD align="center" valign="middle" style="padding-top:8px;"></TD>
-					   <td width="100%" class="footerText" valign="middle" align="center" style="padding-right:20px;">
-                         <p class="footerText">Copyright &copy; Apex Competition Systems. All rights reserved.<br></p></td>
-	                   <TD align="right" valign="middle" style="padding-top:8px;" nowrap >
-		               </TD>
-                    </TR>
-				  </TABLE>
-	</TD>
-  </TR>
-
-</TABLE>
-
-
+  <script src="/assets/js/site.js"></script>
 </body>
 </html>

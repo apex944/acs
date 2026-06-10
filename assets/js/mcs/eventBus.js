@@ -1,0 +1,2 @@
+class EventBus{constructor(){this.listeners={}}on(event,callback){this.listeners[event]||(this.listeners[event]=new Set),this.listeners[event].add(callback)}off(event,callback){this.listeners[event]&&this.listeners[event].delete(callback)}emit(event,data){this.listeners[event]&&this.listeners[event].forEach(callback=>callback(data))}}window.eventBus=new EventBus;
+//# sourceMappingURL=/cdn/shop/t/3/assets/eventBus.js.map?v=100401504747444416941722275871

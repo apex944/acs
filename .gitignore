@@ -1,0 +1,6 @@
+.claude/
+*.code-workspace
+*_raw.html
+*_source.html
+*.pre-localize.bak.html
+tmp_*.css

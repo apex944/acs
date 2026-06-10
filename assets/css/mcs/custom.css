@@ -1,0 +1,9 @@
+/* Place any CSS overrides in this file. */
+.tigren-productAttachment {
+        box-shadow: none!important;
+    padding: 0!important;
+    margin-bottom: 20px!important;
+}
+.tigren-infor_wrap {
+    text-align: left!important;
+}

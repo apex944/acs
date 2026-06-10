@@ -1,0 +1,102 @@
+body {
+  background: #ffffff;
+  font-family: "Instrument Sans", sans-serif;
+}
+
+body,
+body table,
+body tbody,
+body tr,
+body td,
+body th,
+body p,
+body div,
+body span,
+body li,
+body a,
+body h1,
+body h2,
+body h3,
+body input,
+body select,
+body textarea,
+body button,
+body font {
+  font-family: "Instrument Sans", sans-serif !important;
+}
+
+.site-header {
+  justify-content: center;
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.productinfo-shell {
+  max-width: 980px;
+  margin: 0 auto 56px;
+  padding: 0 16px;
+}
+
+.productinfo-shell > table,
+.productinfo-shell table[align="center"] {
+  max-width: 100%;
+}
+
+.productinfo-shell img {
+  max-width: 100%;
+  height: auto;
+}
+
+.productinfo-header-spacer {
+  height: 18px;
+}
+
+.productinfo-title-spacer {
+  display: block;
+  height: 33px;
+}
+
+.productinfo-subnav-legacy {
+  color: #4f4f4f;
+  font-family: "Instrument Sans", sans-serif !important;
+  font-size: 16px !important;
+  line-height: 1.7;
+}
+
+.productinfo-subnav-legacy a {
+  display: inline-block;
+  position: relative;
+  color: #165fc2 !important;
+  font-family: "Instrument Sans", sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 700;
+  line-height: 1.7;
+  text-decoration: none;
+}
+
+.productinfo-subnav-legacy a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  height: 3px;
+  background: #2074e6;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.18s ease;
+}
+
+.productinfo-subnav-legacy a:hover::after,
+.productinfo-subnav-legacy a:focus-visible::after {
+  transform: scaleX(1);
+}
+
+body > table:first-of-type > tbody > tr:nth-child(1),
+body > table:first-of-type > tbody > tr:nth-child(2),
+body > table:first-of-type > tbody > tr:nth-child(3),
+body > p + table,
+body > p + table + table {
+  display: none;
+}
