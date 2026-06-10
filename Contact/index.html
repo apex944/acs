@@ -60,53 +60,50 @@
 
       <div class="contact-form-card">
         <h2>Send an Inquiry</h2>
-        <p><span class="contact-highlight">This legacy contact form is currently not functional</span> while the site is being updated. The form layout is preserved here for redesign purposes, but for now the best contact method is direct email.</p>
+        <p>Tell us about your car and what you need. Required fields are marked with an asterisk.</p>
 
         <div class="contact-status">
-          <strong><span class="contact-highlight">Note:</span></strong> Please contact us directly at <a href="mailto:sales@ApexCompetition.com">sales@ApexCompetition.com</a> 
+          <strong>Prefer email?</strong> Contact us directly at <a href="mailto:sales@ApexCompetition.com">sales@ApexCompetition.com</a>.
         </div>
 
-        <form method="post" action="/Contact/">
-          <input type="hidden" name="subject" value="ACS Web Inquiry">
-          <input type="hidden" name="recipient" value="sales@ApexCompetition.com">
-          <input type="hidden" name="redirect" value="Thank_you.html">
-          <input type="hidden" name="from" value="sales@ApexCompetition.com">
+        <form method="post" action="https://formspree.io/f/mkoavgyd">
+          <input type="hidden" name="_subject" value="ACS Web Inquiry">
 
           <div class="contact-grid">
             <div class="contact-field">
               <label for="contact-name">Name *</label>
-              <input id="contact-name" name="Name" type="text">
+              <input id="contact-name" name="name" type="text" autocomplete="name" required>
             </div>
 
             <div class="contact-field">
               <label for="contact-email">Email *</label>
-              <input id="contact-email" name="email" type="email">
+              <input id="contact-email" name="email" type="email" autocomplete="email" required>
             </div>
 
             <div class="contact-field">
               <label for="contact-phone">Phone</label>
-              <input id="contact-phone" name="Phone" type="text">
+              <input id="contact-phone" name="phone" type="tel" autocomplete="tel">
             </div>
 
             <div class="contact-field">
               <label for="contact-year">Car Year</label>
-              <input id="contact-year" name="Year" type="text">
+              <input id="contact-year" name="car_year" type="text" inputmode="numeric">
             </div>
 
             <div class="contact-field contact-field--full">
               <label for="contact-make">Make / Model</label>
-              <input id="contact-make" name="Make" type="text">
+              <input id="contact-make" name="make_model" type="text">
             </div>
 
             <div class="contact-field contact-field--full">
               <label for="contact-comments">Comments *</label>
-              <textarea id="contact-comments" name="Comments"></textarea>
+              <textarea id="contact-comments" name="message" required></textarea>
             </div>
           </div>
 
           <div class="contact-actions">
             <button class="site-button contact-submit" type="submit">Send Inquiry</button>
-            <div class="contact-note"><strong>Current status:</strong> form submission may not be active during the site transition.</div>
+            <div class="contact-note">Your inquiry will be sent securely through Formspree.</div>
           </div>
         </form>
       </div>
