@@ -506,14 +506,14 @@
           <a href="/ProductInfo/" class="mobile-nav__link">Products</a>
         </li>
         <li class="mobile-nav__item top-level">
-          <a href="/catemp/" class="mobile-nav__link">Shop</a>
+            <a href="#/catemp/" class="mobile-nav__link">Shop</a>
         </li>
         <li class="mobile-nav__item top-level">
           <a href="/mcs/" class="mobile-nav__link" data-submenu-toggle="true" aria-expanded="false">Suspensions</a>
           <div class="mobile-nav__submenu">
-            <a href="/mcs/rebuilds/" class="mobile-nav__link">Rebuilds</a>
-            <a href="/mcs/mcs_faq.html" class="mobile-nav__link">Damper FAQ</a>
-            <a href="/mcs/dampers-101/" class="mobile-nav__link">Dampers 101</a>
+            <a href="#/mcs/rebuilds/" class="mobile-nav__link">Rebuilds</a>
+            <a href="#/mcs/mcs_faq.html" class="mobile-nav__link">Damper FAQ</a>
+            <a href="#/mcs/dampers-101/" class="mobile-nav__link">Dampers 101</a>
           </div>
         </li>
         <li class="mobile-nav__item top-level">
@@ -650,13 +650,13 @@
         <nav class="acs-legacy-nav" aria-label="Primary">
           <a class="acs-legacy-nav__link acs-legacy-nav__link--wide" href="/">home</a>
           <a class="acs-legacy-nav__link" href="/ProductInfo/">products</a>
-          <a class="acs-legacy-nav__link" href="/catemp/">shop</a>
+        <a class="acs-legacy-nav__link" href="#/catemp/">shop</a>
           <div class="acs-legacy-nav__item acs-legacy-nav__item--has-submenu">
             <a class="acs-legacy-nav__link" href="/mcs/" data-submenu-toggle="true" aria-haspopup="true" aria-expanded="false">suspensions</a>
             <div class="acs-legacy-submenu" aria-label="Suspensions submenu">
-              <a class="acs-legacy-submenu__link" href="/mcs/rebuilds/">Rebuilds</a>
-              <a class="acs-legacy-submenu__link" href="/mcs/mcs_faq.html">Damper FAQ</a>
-              <a class="acs-legacy-submenu__link" href="/mcs/dampers-101/">Dampers 101</a>
+              <a class="acs-legacy-submenu__link" href="#/mcs/rebuilds/">Rebuilds</a>
+              <a class="acs-legacy-submenu__link" href="#/mcs/mcs_faq.html">Damper FAQ</a>
+              <a class="acs-legacy-submenu__link" href="#/mcs/dampers-101/">Dampers 101</a>
             </div>
           </div>
           <a class="acs-legacy-nav__link" href="/about/">about us</a>
@@ -2221,6 +2221,9 @@
     var mobileSubmenus = document.querySelectorAll('#NavDrawer .mobile-nav__item--has-submenu');
 
     desktopLinks.forEach(function(link) {
+      if ((link.getAttribute('href') || '').charAt(0) === '#') {
+        return;
+      }
       var linkPath = normalizePath(new URL(link.href, window.location.origin).pathname);
       if (linkPath === currentPath) {
         link.classList.add('is-current');
@@ -2235,6 +2238,9 @@
 
       var matchedChild = false;
       item.querySelectorAll('.acs-legacy-submenu__link').forEach(function(link) {
+        if ((link.getAttribute('href') || '').charAt(0) === '#') {
+          return;
+        }
         var linkPath = normalizePath(new URL(link.href, window.location.origin).pathname);
         if (linkPath === currentPath) {
           link.classList.add('is-current');
@@ -2281,6 +2287,9 @@
 
       var matchedChild = false;
       item.querySelectorAll('.mobile-nav__submenu .mobile-nav__link').forEach(function(link) {
+        if ((link.getAttribute('href') || '').charAt(0) === '#') {
+          return;
+        }
         var linkPath = normalizePath(new URL(link.href, window.location.origin).pathname);
         if (linkPath === currentPath) {
           link.classList.add('is-current');

@@ -36,9 +36,9 @@
     item.innerHTML = [
       '<a href="/mcs/" data-submenu-toggle="true" aria-haspopup="true" aria-expanded="false">Suspensions</a>',
       '<div class="site-submenu" aria-label="Suspensions submenu">',
-      '<a href="/mcs/rebuilds/">Rebuilds</a>',
-      '<a href="/mcs/mcs_faq.html">Damper FAQ</a>',
-      '<a href="/mcs/dampers-101/">Dampers 101</a>',
+        '<a href="#/mcs/rebuilds/">Rebuilds</a>',
+        '<a href="#/mcs/mcs_faq.html">Damper FAQ</a>',
+        '<a href="#/mcs/dampers-101/">Dampers 101</a>',
       "</div>"
     ].join("");
     return item;
@@ -67,6 +67,9 @@
 
     Array.prototype.slice.call(root.children || []).forEach(function(child) {
       if (child.matches && child.matches("a")) {
+        if ((child.getAttribute("href") || "").charAt(0) === "#") {
+          return;
+        }
         var linkPath = normalizePath(new URL(child.href, window.location.origin).pathname);
         if (linkPath === currentPath) {
           child.classList.add("is-current");
@@ -79,6 +82,9 @@
       var matchedChild = false;
 
       item.querySelectorAll(".site-submenu a").forEach(function(link) {
+        if ((link.getAttribute("href") || "").charAt(0) === "#") {
+          return;
+        }
         var linkPath = normalizePath(new URL(link.href, window.location.origin).pathname);
         if (linkPath === currentPath) {
           link.classList.add("is-current");
