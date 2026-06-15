@@ -39,6 +39,7 @@
 - Shared nav accent blue: `#2074e6`
 - Shared page body color: `#242424`
 - Shared page title color: `#242424`
+- All current and future pages should include `<link rel="icon" type="image/png" href="/assets/img/favico.png">` in the document head.
 
 ## Footer
 
