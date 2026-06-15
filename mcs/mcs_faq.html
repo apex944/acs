@@ -408,10 +408,60 @@
 
   <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
 
+<style>
+  body.acs-wip-open {
+    overflow: hidden;
+  }
+
+  .acs-wip-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 100000;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+    background: rgba(36, 36, 36, 0.78);
+  }
+
+  .acs-wip-message {
+    width: min(100%, 620px);
+    padding: clamp(28px, 5vw, 48px);
+    border: 4px solid #242424;
+    border-top-color: #2074e6;
+    border-bottom-color: #2074e6;
+    border-radius: 12px;
+    background: #f2f3f5;
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
+    color: #242424;
+    text-align: center;
+  }
+
+  .acs-wip-message h1 {
+    margin: 0 0 18px;
+    color: #2074e6;
+    font-family: "Instrument Sans", sans-serif;
+    font-size: clamp(28px, 5vw, 42px);
+    line-height: 1.1;
+  }
+
+  .acs-wip-message p {
+    margin: 0;
+    font-family: "Instrument Sans", sans-serif;
+    font-size: clamp(17px, 2.5vw, 20px);
+    line-height: 1.6;
+  }
+</style>
+
 </head>
 
 
-<body id="mcs-suspension" class="template-page page-fade images-aspect-ratio ">
+<body id="mcs-suspension" class="template-page page-fade images-aspect-ratio acs-wip-open">
+  <div class="acs-wip-overlay" role="alertdialog" aria-modal="true" aria-labelledby="acs-wip-title" aria-describedby="acs-wip-description">
+    <div class="acs-wip-message">
+      <h1 id="acs-wip-title">Work in Progress</h1>
+      <p id="acs-wip-description">This section is currently a work in progress. Come back soon for guidance on suspension selection and specific set-up details for road racing.</p>
+    </div>
+  </div>
 
   <div id="PageContainer">
     <div class="no-js disclaimer">
