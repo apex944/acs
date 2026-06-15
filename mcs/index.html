@@ -2199,14 +2199,6 @@
         trigger.setAttribute('aria-expanded', 'true');
       }
 
-      trigger.addEventListener('click', function(event) {
-        if (!item.classList.contains('is-open')) {
-          event.preventDefault();
-          closeOtherDesktopSubmenus();
-          item.classList.add('is-open');
-          trigger.setAttribute('aria-expanded', 'true');
-        }
-      });
     }
 
     function bindMobileSubmenu(item) {
@@ -2236,22 +2228,6 @@
         trigger.setAttribute('aria-expanded', 'true');
       }
 
-      trigger.addEventListener('click', function(event) {
-        if (!item.classList.contains('is-open')) {
-          event.preventDefault();
-          mobileSubmenus.forEach(function(otherItem) {
-            if (otherItem !== item) {
-              otherItem.classList.remove('is-open');
-              var otherTrigger = otherItem.querySelector(':scope > .mobile-nav__link');
-              if (otherTrigger) {
-                otherTrigger.setAttribute('aria-expanded', 'false');
-              }
-            }
-          });
-          item.classList.add('is-open');
-          trigger.setAttribute('aria-expanded', 'true');
-        }
-      });
     }
 
     desktopSubmenus.forEach(bindDesktopSubmenu);

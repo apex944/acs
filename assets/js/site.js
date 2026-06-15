@@ -132,19 +132,6 @@
 
       setExpanded(item, item.classList.contains("is-open"));
 
-      trigger.addEventListener("click", function(event) {
-        if (!item.classList.contains("is-open")) {
-          event.preventDefault();
-          closeAll(item);
-          item.classList.add("is-open");
-          setExpanded(item, true);
-          return;
-        }
-
-        if (isMobile) {
-          closeAll();
-        }
-      });
     });
 
     if (!isMobile) {
