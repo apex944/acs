@@ -573,8 +573,12 @@
             <a href="#/mcs/dampers-101/" class="mobile-nav__link">Dampers 101</a>
           </div>
         </li>
-        <li class="mobile-nav__item top-level">
-          <a href="/about/" class="mobile-nav__link">About Us</a>
+        <li class="mobile-nav__item top-level mobile-nav__item--has-submenu">
+          <a href="/about/" class="mobile-nav__link" data-submenu-toggle="true" aria-expanded="false">About Us</a>
+          <div class="mobile-nav__submenu">
+            <a href="/customers/" class="mobile-nav__link">Customers</a>
+            <a href="/partners/index.html" class="mobile-nav__link">Partners</a>
+          </div>
         </li>
       </ul>
 
@@ -715,7 +719,13 @@
               <a class="acs-legacy-submenu__link" href="#/mcs/dampers-101/">Dampers 101</a>
             </div>
           </div>
-          <a class="acs-legacy-nav__link" href="/about/">about us</a>
+          <div class="acs-legacy-nav__item acs-legacy-nav__item--has-submenu">
+            <a class="acs-legacy-nav__link" href="/about/" data-submenu-toggle="true" aria-haspopup="true" aria-expanded="false">about us</a>
+            <div class="acs-legacy-submenu" aria-label="About Us submenu">
+              <a class="acs-legacy-submenu__link" href="/customers/">Customers</a>
+              <a class="acs-legacy-submenu__link" href="/partners/index.html">Partners</a>
+            </div>
+          </div>
         </nav>
       </div>
 
@@ -2543,7 +2553,8 @@
         }
       });
 
-      if (matchedChild || currentPath === '/mcs' || currentPath.indexOf('/mcs/') === 0) {
+      var triggerPath = normalizePath(new URL(trigger.href, window.location.origin).pathname);
+      if (matchedChild || currentPath === triggerPath || currentPath.indexOf(triggerPath + '/') === 0) {
         trigger.classList.add('is-current');
       }
 
@@ -2584,7 +2595,8 @@
         }
       });
 
-      if (matchedChild || currentPath === '/mcs' || currentPath.indexOf('/mcs/') === 0) {
+      var triggerPath = normalizePath(new URL(trigger.href, window.location.origin).pathname);
+      if (matchedChild || currentPath === triggerPath || currentPath.indexOf(triggerPath + '/') === 0) {
         trigger.classList.add('is-current');
       }
 

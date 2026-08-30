@@ -44,17 +44,35 @@
     return item;
   }
 
+  function createAboutItem() {
+    var item = document.createElement("div");
+    item.className = "site-nav-item site-nav-item--has-submenu";
+    item.innerHTML = [
+      '<a href="/about/" data-submenu-toggle="true" aria-haspopup="true" aria-expanded="false">About Us</a>',
+      '<div class="site-submenu" aria-label="About Us submenu">',
+        '<a href="/customers/">Customers</a>',
+        '<a href="/partners/index.html">Partners</a>',
+      "</div>"
+    ].join("");
+    return item;
+  }
+
   function enhanceDesktopNav(nav) {
     var links = Array.prototype.slice.call(nav.children || []);
     var suspensionsLink = links.find(function(child) {
       return child.tagName === "A" && normalizePath(child.getAttribute("href")) === "/mcs";
     });
+    var aboutLink = links.find(function(child) {
+      return child.tagName === "A" && normalizePath(child.getAttribute("href")) === "/about";
+    });
 
-    if (!suspensionsLink || nav.querySelector(".site-nav-item--has-submenu")) {
-      return;
+    if (suspensionsLink) {
+      nav.replaceChild(createSuspensionsItem(), suspensionsLink);
     }
 
-    nav.replaceChild(createSuspensionsItem(), suspensionsLink);
+    if (aboutLink) {
+      nav.replaceChild(createAboutItem(), aboutLink);
+    }
   }
 
   function markCurrentLinks(root) {
@@ -94,7 +112,7 @@
 
       if (trigger) {
         var triggerPath = normalizePath(new URL(trigger.href, window.location.origin).pathname);
-        if (matchedChild || currentPath === triggerPath || currentPath.indexOf("/mcs/") === 0) {
+        if (matchedChild || currentPath === triggerPath || currentPath.indexOf(triggerPath + "/") === 0) {
           trigger.classList.add("is-current");
         }
       }
