@@ -36,9 +36,7 @@
     item.innerHTML = [
       '<a href="/mcs/" data-submenu-toggle="true" aria-haspopup="true" aria-expanded="false">Suspensions</a>',
       '<div class="site-submenu" aria-label="Suspensions submenu">',
-        '<a href="#/mcs/rebuilds/">Rebuilds</a>',
-        '<a href="#/mcs/mcs_faq.html">Damper FAQ</a>',
-        '<a href="#/mcs/dampers-101/">Dampers 101</a>',
+        '<a href="/mcs/mcs_faq.html">Damper FAQ</a>',
       "</div>"
     ].join("");
     return item;
